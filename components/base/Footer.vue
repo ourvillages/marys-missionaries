@@ -2,42 +2,32 @@
   <footer class="max-w-screen-xl px-8 mx-auto">
     <div class="w-full border-y border-[#DDDDDD]">
       <div class="w-full flex flex-wrap space-y-6">
-        <div
-          class="w-full sm:w-1/2 xl:w-fit flex flex-col sm:flex-row sm:px-6 py-6 sm:py-12 sm:space-x-10 sm:border-r border-[#DDDDDD]">
+        <div class="w-full sm:w-1/2 xl:w-fit flex flex-col sm:flex-row sm:px-6 py-6 sm:py-12 sm:space-x-10 sm:border-r border-[#DDDDDD]">
           <div class="mb-6 sm:mb-0 gap-6 flex flex-col">
             <a href="#">
               <img src="/assets/img/logo/nefa.svg" class="w-24 -mt-2" alt="Nefa Logo" />
             </a>
             <ul class="space-y-2 font-normal text-xs text-gray-400">
-              <li>
-                City of Industry, Ca 91715
-              </li>
-              <li>
-                P.O. Box 92397
-              </li>
-              <li>
-                Tax-approved 501(c)3 Charity
-              </li>
-              <li>
-                EIN #82-1958776
-              </li>
+              <li>City of Industry, Ca 91715</li>
+              <li>P.O. Box 92397</li>
+              <li>Tax-approved 501(c)3 Charity</li>
+              <li>EIN #82-1958776</li>
             </ul>
             <ul class="space-x-2 flex font-normal text-xs text-gray-400">
               <li>
                 <a href="https://www.facebook.com/marysmissionariesinc" target="_blank" rel="noreferrer noopener">
-                  <Facebook />
+                  <FacebookIcon />
                 </a>
               </li>
               <li>
                 <a href="https://www.instagram.com/marysmissionaries/" target="_blank" rel="noreferrer noopener">
-                  <Instagram />
+                  <InstagramIcon />
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div
-          class="w-full sm:w-1/2 xl:w-fit sm:px-16 py-6 sm:py-12 border-t sm:border-t-0 xl:border-r border-[#DDDDDD]">
+        <div class="w-full sm:w-1/2 xl:w-fit sm:px-16 py-6 sm:py-12 border-t sm:border-t-0 xl:border-r border-[#DDDDDD]">
           <ul class="space-y-4">
             <NavLink name="Our Projects" url="#" />
             <NavLink name="Our Strategy" url="#" />
@@ -48,8 +38,7 @@
             <NavLink name="Blog" url="#" />
           </ul>
         </div>
-        <div
-          class="w-full sm:w-1/2 xl:w-fit sm:px-16 py-6 sm:py-12 border-t sm:border-t-0 sm:border-r border-[#DDDDDD]">
+        <div class="w-full sm:w-1/2 xl:w-fit sm:px-16 py-6 sm:py-12 border-t sm:border-t-0 sm:border-r border-[#DDDDDD]">
           <ul class="space-y-4">
             <NavLink name="Help Center" url="#" />
             <NavLink name="Contact Us" url="#" />
@@ -58,18 +47,18 @@
             <NavLink name="Privacy Policy" url="#" />
           </ul>
         </div>
-        <div
-          class="sm:px-10 py-6 sm:py-12 w-full sm:w-1/2 xl:w-[22rem] space-y-4 border-t sm:border-t-0 border-[#DDDDDD]">
+        <div class="sm:px-10 py-6 sm:py-12 w-full sm:w-1/2 xl:w-[22rem] space-y-4 border-t sm:border-t-0 border-[#DDDDDD]">
           <h5 class="text-sm font-medium text-[#666666] focus:outline-none focus:shadow-outline">Newsletter</h5>
           <p class="text-sm text-[#666666] focus:outline-none focus:shadow-outline">
             Never miss anything crypto when <br class="sm:hidden" />you're on the go
           </p>
           <div class="flex items-center space-x-2">
-            <input type="text"
+            <input
+              type="text"
               class="w-full px-2 py-4 sm:py-3 rounded-lg sm:rounded-md text-sm focus:outline-none border border-[#AAAAAA] placeholder-[#888]"
-              placeholder="Enter your email" />
-            <button
-              class="bg-blue-gradient px-4 py-4 sm:py-3 rounded-md text-white hover:shadow-md transition duration-300">
+              placeholder="Enter your email"
+            />
+            <button class="bg-blue-gradient px-4 py-4 sm:py-3 rounded-md text-white hover:shadow-md transition duration-300">
               <ArrowRightIcon :size="20" />
             </button>
           </div>
@@ -82,15 +71,12 @@
   </footer>
 </template>
 <script>
-import Facebook from "../../node_modules/vue-material-design-icons/Facebook.vue";
-import Instagram from "../../node_modules/vue-material-design-icons/Instagram.vue";
 export default {
-  name: "BaseFooter",
-  data () {
+  name: 'BaseFooter',
+  data() {
     return {
-      year: new Date().getFullYear()
-    };
+      year: new Date().getFullYear(),
+    }
   },
-  components: { Facebook, Instagram }
 }
 </script>

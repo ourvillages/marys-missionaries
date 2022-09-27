@@ -11,8 +11,10 @@
             <CloseIcon v-else :size="24" />
           </button>
         </div>
-        <ul :class="[open ? 'flex' : 'hidden lg:flex']"
-          class="w-full h-auto flex flex-col flex-grow lg:items-center pb-4 lg:pb-0 lg:justify-end lg:flex-row origin-top duration-300 xl:space-x-2 space-y-3 lg:space-y-0">
+        <ul
+          :class="[open ? 'flex' : 'hidden lg:flex']"
+          class="w-full h-auto flex flex-col flex-grow lg:items-center pb-4 lg:pb-0 lg:justify-end lg:flex-row origin-top duration-300 xl:space-x-2 space-y-3 lg:space-y-0"
+        >
           <NavLink name="Introduction" url="#intro" />
           <NavLink name="Causes" url="#" />
           <NavLink name="Villages" url="#" />
@@ -46,12 +48,8 @@
         </ul>
       </div>
       <div :class="[open ? 'flex' : 'hidden lg:flex']" class="space-x-3">
-        <base-button class="px-8 xl:px-10 py-3 mt-2 bg-inherit text-gradient border border-[#0c66ee]">
-          Login
-        </base-button>
-        <base-button class="px-8 xl:px-10 py-3 mt-2 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white">
-          Sign Up
-        </base-button>
+        <base-button class="px-8 xl:px-10 py-3 mt-2 bg-inherit text-gradient border border-[#0c66ee]"> Login </base-button>
+        <base-button class="px-8 xl:px-10 py-3 mt-2 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white"> Sign Up </base-button>
       </div>
     </div>
   </nav>
@@ -59,7 +57,7 @@
 <script>
 export default {
   name: 'BaseNavbar',
-  data () {
+  data() {
     return {
       open: false,
       dropdownNavbar: false,
