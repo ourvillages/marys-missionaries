@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  scroll-behavior: smooth;
+}
+
 .transform-fade-down-enter-active,
 .transform-fade-down-leave-active {
   @apply transition-all translate-y-0 duration-300;
