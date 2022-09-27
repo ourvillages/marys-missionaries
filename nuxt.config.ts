@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   // https://tailwindcss.nuxtjs.org/getting-started/setup
   // https://strapi.nuxtjs.org/
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/strapi'],
+  css: ['aos/dist/aos.css'],
   strapi: [
     {
       url: process.env.STRAPI_URL || 'http://localhost:1337',

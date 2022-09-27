@@ -10,7 +10,10 @@ module.exports = {
     `app.{js,ts,vue}`,
   ],
   theme: {
+    fontFamily: {
+      sans: ['Poppins', 'sans-serif'],
+    },
     extend: {},
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/aspect-ratio')],
 }
