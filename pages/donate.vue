@@ -18,7 +18,7 @@ window.Givebutter('setOptions', {
 <template>
   <div class="h-screen">
     <div class="aspect-w-16 aspect-h-9 [&_iframe]:!h-full">
-      <div :givebutter-element-id="useRuntimeConfig().public.giveButterElementId"></div>
+      <div :givebutter-element-id="runtimeConfig.public.giveButterElementId"></div>
     </div>
   </div>
 </template>

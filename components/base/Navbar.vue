@@ -3,9 +3,9 @@
     <div class="flex flex-col max-w-screen-xl px-8 mx-auto lg:items-center lg:justify-between lg:flex-row py-4">
       <div class="flex flex-col lg:flex-row items-center space-x-4 xl:space-x-8">
         <div class="w-full flex flex-row items-center justify-between py-6">
-          <div>
+          <NuxtLink to="/">
             <img src="/img/logo/nefa.svg" class="w-24 xl:w-28" alt="Nefa Logo" />
-          </div>
+          </NuxtLink>
           <button class="rounded-lg lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
             <Icon name="mdi:segment" v-if="!open" size="24" />
             <Icon name="mdi:close" v-else size="24" />
@@ -16,7 +16,7 @@
           class="w-full h-auto flex flex-col flex-grow lg:items-center pb-4 lg:pb-0 lg:justify-end lg:flex-row origin-top duration-300 xl:space-x-2 space-y-3 lg:space-y-0"
         >
           <NavLink name="Introduction" url="#intro" />
-          <NavLink name="Causes" url="#" />
+          <NavLink name="Blog" url="/blog" />
           <NavLink name="Villages" url="#" />
           <NavLink name="Testimony" url="#testimony" />
           <li class="relative group">

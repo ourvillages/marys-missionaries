@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon'],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', 'nuxt-directus'],
   css: ['aos/dist/aos.css'],
   runtimeConfig: {
     public: {
@@ -11,5 +11,8 @@ export default defineNuxtConfig({
   typescript: {
     shim: false,
     strict: true,
+  },
+  directus: {
+    url: process.env.DIRECTUS_URL,
   },
 })

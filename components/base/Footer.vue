@@ -46,7 +46,7 @@ export default {
             <NavLink name="Our Patron" url="#" />
             <NavLink name="Annual Report" url="#" />
             <NavLink name="About Us" url="#" />
-            <NavLink name="Blog" url="#" />
+            <NavLink name="Blog" url="/blog" />
           </ul>
         </div>
         <div class="w-full sm:w-1/2 xl:w-fit sm:px-16 py-6 sm:py-12 border-t sm:border-t-0 sm:border-r border-[#DDDDDD]">

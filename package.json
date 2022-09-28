@@ -18,6 +18,8 @@
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
     "aos": "^2.3.4",
+    "date-fns": "^2.29.3",
+    "nuxt-directus": "^3.0.3",
     "swiper": "^8.4.2"
   }
 }
