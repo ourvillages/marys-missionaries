@@ -5,8 +5,10 @@ specifiers:
   '@nuxtjs/tailwindcss': ^5.3.3
   '@tailwindcss/aspect-ratio': ^0.4.2
   '@tailwindcss/forms': ^0.5.3
+  '@types/aos': ^3.0.4
   aos: ^2.3.4
   nuxt: 3.0.0-rc.11
+  nuxt-icon: ^0.1.6
   swiper: ^8.4.2
   vue-material-design-icons: ^5.1.2
 
@@ -20,7 +22,9 @@ dependencies:
 devDependencies:
   '@nuxtjs/strapi': 1.5.1
   '@nuxtjs/tailwindcss': 5.3.3
+  '@types/aos': 3.0.4
   nuxt: 3.0.0-rc.11
+  nuxt-icon: 0.1.6
 
 packages:
 
@@ -364,6 +368,12 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@iconify/vue/3.2.1:
+    resolution: {integrity: sha512-c4R6ZgFo1JrJ8aPMMgOPgfU7lBswihMGR+yWe/P4ZukC3kTkeT4+lkt9Pc/itVFMkwva/S/7u9YofmYv57fnNQ==}
+    peerDependencies:
+      vue: 3.x
+    dev: true
 
   /@ioredis/commands/1.2.0:
     resolution: {integrity: sha512-Sx1pU8EM64o2BrqNpEO1CNLtKQwyhuXuqyfH7oGKCk+1a33d2r5saW8zNwm3j6BTExtjrv2BxTgzzkMwts6vGg==}
@@ -770,6 +780,10 @@ packages:
   /@trysound/sax/0.2.0:
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
     engines: {node: '>=10.13.0'}
+    dev: true
+
+  /@types/aos/3.0.4:
+    resolution: {integrity: sha512-mna6Jd6bdK1NpwarLopGvXOgUoCfj0470IwLxuVOFDElTGI0JTd7xSGQ0AjbAEnHErC/b3fA9t2uB3IXVKmckA==}
     dev: true
 
   /@types/estree/0.0.39:
@@ -3531,6 +3545,16 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /nuxt-icon/0.1.6:
+    resolution: {integrity: sha512-kxw2a1VcLpqzFp0q84AhRykXOnVO5p8dEIPF0GWbFiAOK0pn1acCbTVRbgKm4sD3H+g1v3Gm8OYvl71TCDDkqg==}
+    dependencies:
+      '@iconify/vue': 3.2.1
+      '@nuxt/kit': 3.0.0-rc.11
+    transitivePeerDependencies:
+      - supports-color
+      - vue
     dev: true
 
   /nuxt/3.0.0-rc.11:

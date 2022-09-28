@@ -7,8 +7,8 @@
             <img src="/assets/img/logo/nefa.svg" class="w-24 xl:w-28" alt="Nefa Logo" />
           </div>
           <button class="rounded-lg lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
-            <SegmentIcon v-if="!open" :size="24" />
-            <CloseIcon v-else :size="24" />
+            <Icon name="mdi:segment" v-if="!open" size="24" />
+            <Icon name="mdi:close" v-else size="24" />
           </button>
         </div>
         <ul
@@ -19,17 +19,17 @@
           <NavLink name="Causes" url="#" />
           <NavLink name="Villages" url="#" />
           <NavLink name="Testimony" url="#testimony" />
-          <!-- <li class="relative group">
+          <li class="relative group">
             <button
               class="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline flex items-center"
-              @click="dropdownNavbar = !dropdownNavbar">
+              @click="dropdownNavbar = !dropdownNavbar"
+            >
               <span>Products</span>
-              <ChevronUpIcon v-if="dropdownNavbar" :size="16" />
-              <ChevronDownIcon v-else :size="16" />
+              <Icon name="mdi:chevron-up" v-if="dropdownNavbar" size="20" />
+              <Icon name="mdi:chevron-down" v-else size="20" />
             </button>
             <transition name="transform-fade-down">
-              <ul v-if="dropdownNavbar"
-                class="flex lg:absolute flex-col max-w-42 py-1 lg:bg-white rounded-md lg:shadow-md pl-2 lg:pl-0">
+              <ul v-if="dropdownNavbar" class="flex lg:absolute flex-col max-w-42 py-1 lg:bg-white rounded-md lg:shadow-md pl-2 lg:pl-0">
                 <li>
                   <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Exchange</a>
                 </li>
@@ -44,7 +44,7 @@
                 </li>
               </ul>
             </transition>
-          </li> -->
+          </li>
         </ul>
       </div>
       <div :class="[open ? 'flex' : 'hidden lg:flex']" class="space-x-3">

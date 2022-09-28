@@ -1,3 +1,14 @@
+<script scoped lang="ts">
+export default {
+  name: 'BaseFooter',
+  data() {
+    return {
+      year: new Date().getFullYear(),
+    }
+  },
+}
+</script>
+
 <template>
   <footer class="max-w-screen-xl px-8 mx-auto">
     <div class="w-full border-y border-[#DDDDDD]">
@@ -16,12 +27,12 @@
             <ul class="space-x-2 flex font-normal text-xs text-gray-400">
               <li>
                 <a href="https://www.facebook.com/marysmissionariesinc" target="_blank" rel="noreferrer noopener">
-                  <FacebookIcon />
+                  <Icon name="mdi:facebook" />
                 </a>
               </li>
               <li>
                 <a href="https://www.instagram.com/marysmissionaries/" target="_blank" rel="noreferrer noopener">
-                  <InstagramIcon />
+                  <Icon name="mdi:instagram" />
                 </a>
               </li>
             </ul>
@@ -59,7 +70,7 @@
               placeholder="Enter your email"
             />
             <button class="bg-blue-gradient px-4 py-4 sm:py-3 rounded-md text-white hover:shadow-md transition duration-300">
-              <ArrowRightIcon :size="20" />
+              <Icon name="mdi:arrow-right" size="20" />
             </button>
           </div>
         </div>
@@ -70,13 +81,3 @@
     </div>
   </footer>
 </template>
-<script>
-export default {
-  name: 'BaseFooter',
-  data() {
-    return {
-      year: new Date().getFullYear(),
-    }
-  },
-}
-</script>

@@ -1,4 +1,4 @@
-<script scoped>
+<script scoped lang="ts">
 import aosMixin from '@/mixins/aos'
 export default {
   name: 'IndexPage',
@@ -299,7 +299,7 @@ export default {
         class="px-6 py-3 flex items-center space-x-2 bg-[#FAFAFA] hover:bg-gray-100 hover:shadow-md border border-[#DDDDDD] rounded-md text-gray-700"
       >
         <span>Back to top</span>
-        <ArrowUpIcon :size="20" />
+        <Icon name="mdi:arrow-up" size="20" />
       </a>
     </div>
   </div>
