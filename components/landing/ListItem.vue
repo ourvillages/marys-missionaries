@@ -7,7 +7,7 @@
     <slot></slot>
   </li>
 </template>
-<script>
+<script lang="ts">
 export default {
   name: 'LandingListItem',
   props: {

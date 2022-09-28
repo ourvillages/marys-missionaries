@@ -4,7 +4,7 @@
       <div class="flex flex-col lg:flex-row items-center space-x-4 xl:space-x-8">
         <div class="w-full flex flex-row items-center justify-between py-6">
           <div>
-            <img src="/assets/img/logo/nefa.svg" class="w-24 xl:w-28" alt="Nefa Logo" />
+            <img src="/img/logo/nefa.svg" class="w-24 xl:w-28" alt="Nefa Logo" />
           </div>
           <button class="rounded-lg lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
             <Icon name="mdi:segment" v-if="!open" size="24" />
@@ -54,7 +54,7 @@
     </div>
   </nav>
 </template>
-<script>
+<script lang="ts">
 export default {
   name: 'BaseNavbar',
   data() {

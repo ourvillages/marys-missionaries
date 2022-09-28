@@ -13,10 +13,10 @@ export default {
   <footer class="max-w-screen-xl px-8 mx-auto">
     <div class="w-full border-y border-[#DDDDDD]">
       <div class="w-full flex flex-wrap space-y-6">
-        <div class="w-full sm:w-1/2 xl:w-fit flex flex-col sm:flex-row sm:px-6 py-6 sm:py-12 sm:space-x-10 sm:border-r border-[#DDDDDD]">
+        <div class="w-full sm:w-1/2 xl:w-fit flex flex-col sm:flex-row sm:px-16 py-6 sm:py-12 sm:space-x-10 sm:border-r border-[#DDDDDD]">
           <div class="mb-6 sm:mb-0 gap-6 flex flex-col">
             <a href="#">
-              <img src="/assets/img/logo/nefa.svg" class="w-24 -mt-2" alt="Nefa Logo" />
+              <img src="/img/logo/nefa.svg" class="w-24 -mt-2" alt="Nefa Logo" />
             </a>
             <ul class="space-y-2 font-normal text-xs text-gray-400">
               <li>City of Industry, Ca 91715</li>
@@ -26,13 +26,13 @@ export default {
             </ul>
             <ul class="space-x-2 flex font-normal text-xs text-gray-400">
               <li>
-                <a href="https://www.facebook.com/marysmissionariesinc" target="_blank" rel="noreferrer noopener">
-                  <Icon name="mdi:facebook" />
+                <a href="https://www.facebook.com/marysmissionariesinc" class="hover:text-gray-600" target="_blank" rel="noreferrer noopener">
+                  <Icon name="mdi:facebook" size="20" />
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/marysmissionaries/" target="_blank" rel="noreferrer noopener">
-                  <Icon name="mdi:instagram" />
+                <a href="https://www.instagram.com/marysmissionaries/" class="hover:text-gray-600" target="_blank" rel="noreferrer noopener">
+                  <Icon name="mdi:instagram" size="20" />
                 </a>
               </li>
             </ul>

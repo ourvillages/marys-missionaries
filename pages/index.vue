@@ -83,31 +83,26 @@ export default {
         </div>
         <div class="hidden sm:block col-span-12 lg:col-span-6">
           <div class="w-full flex justify-center items-center h-full">
-            <img data-aos="fade-up" data-aos-once="true" src="/assets/img/hero-image.png" class="-mt-4 w-full max-w-[480px]" alt="" />
+            <img data-aos="fade-up" data-aos-once="true" src="/img/hero-image.png" class="-mt-4 w-full max-w-[480px]" alt="" />
           </div>
         </div>
         <img
           data-aos="fade-up"
           data-aos-delay="300"
-          src="/assets/img/pattern/ellipse-1.png"
+          src="/img/pattern/ellipse-1.png"
           class="hidden sm:block absolute bottom-12 xl:bottom-16 left-4 xl:left-0 w-6"
         />
         <img
           data-aos="fade-up"
           data-aos-delay="300"
-          src="/assets/img/pattern/ellipse-2.png"
+          src="/img/pattern/ellipse-2.png"
           class="hidden sm:block absolute top-4 sm:top-10 right-64 sm:right-96 xl:right-[32rem] w-6"
         />
+        <img data-aos="fade-up" data-aos-delay="300" src="/img/pattern/ellipse-3.png" class="hidden sm:block absolute bottom-56 right-24 w-6" />
         <img
           data-aos="fade-up"
           data-aos-delay="300"
-          src="/assets/img/pattern/ellipse-3.png"
-          class="hidden sm:block absolute bottom-56 right-24 w-6"
-        />
-        <img
-          data-aos="fade-up"
-          data-aos-delay="300"
-          src="/assets/img/pattern/star.png"
+          src="/img/pattern/star.png"
           class="hidden sm:block absolute top-20 sm:top-28 right-16 lg:right-0 lg:left-[30rem] w-8"
         />
       </BaseSection>
@@ -150,7 +145,7 @@ export default {
       <BaseSection data-aos="fade-down">
         <div class="col-span-12 lg:col-span-7">
           <div class="w-full">
-            <img :src="'/assets/img/nefa-cc.webp'" class="w-[95%]" alt="" />
+            <img :src="'/img/nefa-cc.webp'" class="w-[95%]" alt="" />
           </div>
         </div>
         <div class="col-span-12 lg:col-span-5 space-y-6 px-4 sm:px-6 mt-20">
@@ -208,7 +203,7 @@ export default {
       <div class="relative max-w-screen-xl px-8 mx-auto grid grid-cols-12 gap-x-6">
         <div data-aos="fade-right" class="col-span-12 lg:col-span-6">
           <div class="w-full">
-            <img :src="'/assets/img/industry-leading-security.webp'" class="w-full" alt="" />
+            <img :src="'/img/industry-leading-security.webp'" class="w-full" alt="" />
           </div>
         </div>
         <div data-aos="fade-left" class="col-span-12 lg:col-span-5 space-y-8 sm:space-y-6 mt-8 xl:px-8">
@@ -245,12 +240,12 @@ export default {
         >
           <LandingStep v-for="step in steps" :key="step.title" :step="step" />
           <img
-            src="/assets/img/getting-started/arrow.png"
+            src="/img/getting-started/arrow.png"
             class="hidden lg:inline-block absolute top-32 left-64 xl:left-[22rem] w-24 xl:w-[9.5rem]"
             alt=""
           />
           <img
-            src="/assets/img/getting-started/arrow.png"
+            src="/img/getting-started/arrow.png"
             class="hidden lg:inline-block absolute top-32 right-64 xl:right-[22rem] w-24 xl:w-[9.5rem]"
             alt=""
           />
@@ -263,7 +258,7 @@ export default {
       <BaseSection>
         <div data-aos="fade-right" data-aos-delay="150" class="col-span-12 lg:col-span-6">
           <div class="w-full">
-            <img src="/assets/img/faq.webp" class="w-full" alt="" />
+            <img src="/img/faq.webp" class="w-full" alt="" />
           </div>
         </div>
         <div data-aos="fade-left" data-aos-delay="150" class="col-span-12 lg:col-span-6 px-4 sm:px-6 mt-8">
@@ -314,13 +309,13 @@ export default {
 }
 
 .bg-partner {
-  background: url('../assets/img/partner/background.png');
+  background: url('../img/partner/background.png');
   background-size: cover;
   background-position: center;
 }
 
 .bg-trading-tools {
-  background: url('../assets/img/bg-trading-tools.webp');
+  background: url('../img/bg-trading-tools.webp');
   background-size: cover;
   background-position: center;
 }
