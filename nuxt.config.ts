@@ -15,4 +15,7 @@ export default defineNuxtConfig({
   directus: {
     url: process.env.DIRECTUS_URL,
   },
+  nitro: {
+    preset: 'vercel',
+  },
 })
