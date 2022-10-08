@@ -5,20 +5,26 @@ specifiers:
   '@tailwindcss/aspect-ratio': ^0.4.2
   '@tailwindcss/forms': ^0.5.3
   '@types/aos': ^3.0.4
+  '@vee-validate/zod': ^4.6.10
   aos: ^2.3.4
   date-fns: ^2.29.3
   nuxt: 3.0.0-rc.11
   nuxt-directus: ^3.0.3
   nuxt-icon: ^0.1.6
   swiper: ^8.4.2
+  vee-validate: ^4.6.10
+  zod: 3.19.0-beta.0
 
 dependencies:
   '@tailwindcss/aspect-ratio': 0.4.2
   '@tailwindcss/forms': 0.5.3
+  '@vee-validate/zod': 4.6.10_ihb5zeh2ihycfgheyh6eoyf3ry
   aos: 2.3.4
   date-fns: 2.29.3
   nuxt-directus: 3.0.3
   swiper: 8.4.2
+  vee-validate: 4.6.10
+  zod: 3.19.0-beta.0
 
 devDependencies:
   '@nuxtjs/tailwindcss': 5.3.3
@@ -778,6 +784,16 @@ packages:
       '@types/node': 18.7.19
     dev: true
 
+  /@vee-validate/zod/4.6.10_ihb5zeh2ihycfgheyh6eoyf3ry:
+    resolution: {integrity: sha512-7CxKCm2k+ELkF3zKBOgdZKcfefX8vWeS/1DteHy0uJZ/IpGbaVAYh4V0hFh5Cq79eNEtKJRkVSzBdXSTjjKm8g==}
+    peerDependencies:
+      vee-validate: ^4.4.0
+      zod: ^3.1.0
+    dependencies:
+      vee-validate: 4.6.10
+      zod: 3.19.0-beta.0
+    dev: false
+
   /@vercel/nft/0.22.1:
     resolution: {integrity: sha512-lYYZIoxRurqDOSoVIdBicGnpUIpfyaS5qVjdPq+EfI285WqtZK3NK/dyCkiyBul+X2U2OEhRyeMdXPCHGJbohw==}
     hasBin: true
@@ -887,7 +903,6 @@ packages:
 
   /@vue/devtools-api/6.2.1:
     resolution: {integrity: sha512-OEgAMeQXvCoJ+1x8WyQuVZzFo0wcyCmUR3baRVLmKBo1LmYZWMlRiXlux5jd0fqVJu6PfDbOrZItVqUEzLobeQ==}
-    dev: true
 
   /@vue/reactivity-transform/3.2.39:
     resolution: {integrity: sha512-HGuWu864zStiWs9wBC6JYOP1E00UjMdDWIG5W+FpUx28hV3uz9ODOKVNm/vdOy/Pvzg8+OcANxAVC85WFBbl3A==}
@@ -5734,6 +5749,14 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
+  /vee-validate/4.6.10:
+    resolution: {integrity: sha512-B5zdWnz3uijuio/6wV6PlM2m+pyt0+hfKJnz8B7JzT/umUo+TRsQ6PsZynUVhq5S8P54vLWbw3ay908fITWtsw==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      '@vue/devtools-api': 6.2.1
+    dev: false
+
   /vite-node/0.23.4:
     resolution: {integrity: sha512-8VuDGwTWIvwPYcbw8ZycMlwAwqCmqZfLdFrDK75+o+6bWYpede58k6AAXN9ioU+icW82V4u1MzkxLVhhIoQ9xA==}
     engines: {node: '>=v14.16.0'}
@@ -6059,3 +6082,7 @@ packages:
       compress-commons: 4.1.1
       readable-stream: 3.6.0
     dev: true
+
+  /zod/3.19.0-beta.0:
+    resolution: {integrity: sha512-q7QyLltnlFDyoDmY9z5OSBkaLYbX/m/+aEpYaOpbpe22sFOQCscvCz8c4Cn9ZiyVe6eHZy1ngXzDV9/5G0XHDQ==}
+    dev: false
