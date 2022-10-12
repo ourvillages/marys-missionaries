@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { toFormValidator } from '@vee-validate/zod'
-import { useField, useForm } from 'vee-validate'
+import { useForm } from 'vee-validate'
 import * as zod from 'zod'
 
 const { login } = useDirectusAuth()
@@ -9,13 +9,13 @@ const validationSchema = toFormValidator(
   zod.object({
     email: zod
       .string()
-      .nonempty('This is required')
+      .min(1, 'This is required')
       .email({ message: 'Must be a valid email' }),
-    password: zod.string().min(8, { message: 'Too smol' }),
+    password: zod.string().min(8, { message: 'Too small' }),
   })
 )
 
-const { handleSubmit, errors } = useForm({
+const { handleSubmit, errors, useFieldModel } = useForm({
   validationSchema: validationSchema,
 })
 
@@ -26,8 +26,7 @@ const onSubmit = handleSubmit(async (values) => {
   } catch (e) {}
 })
 
-const { value: email } = useField('email')
-const { value: password } = useField('password')
+const [email, password] = useFieldModel(['email', 'password'])
 </script>
 
 <template>
@@ -50,7 +49,7 @@ const { value: password } = useField('password')
             type="email"
             v-model="email"
             id="identity"
-            class="shadow appearance-none borderrounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
             placeholder="Email"
             aria-describedby="emailHelp"
           />
@@ -73,7 +72,7 @@ const { value: password } = useField('password')
             name="password"
             type="password"
             v-model="password"
-            class="shadow appearance-none borderrounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
             id="password"
             placeholder="*******"
           />
