@@ -62,7 +62,7 @@ export default {
             data-aos-once="true"
             class="text-[2.5rem] sm:text-5xl xl:text-6xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10"
           >
-            Helping each <span class="text-header-gradient">other can make</span> world better
+            Helping each <span class="text-header-gradient">other make the</span> world better
           </h1>
           <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="paragraph hidden sm:block">
             We Seek out world changers and difference makers around the globe,and equip them to fulfill their unique purpose.
@@ -73,11 +73,11 @@ export default {
             data-aos-delay="700"
             class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-2"
           >
-            <BaseButton class="max-w-full px-8 py-4 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] border border-[#0c66ee] text-white">
-              Donate now
+            <BaseButton class="max-w-full px-8 py-4 bg-gradient-to-r from-[#50855D] to-[#396242] border border-[#396242] text-white">
+              Donate
             </BaseButton>
-            <BaseButton class="max-w-full px-6 py-4 bg-inherit text-gradient border border-[#0c66ee] flex items-center justify-center">
-              <span>Know About Us</span>
+            <BaseButton class="max-w-full px-6 py-4 bg-inherit text-gradient border border-[#396242] flex items-center justify-center">
+              <span>Join Our Village</span>
             </BaseButton>
           </div>
         </div>
@@ -108,14 +108,14 @@ export default {
       </BaseSection>
     </section>
 
-    <!-- Buy and trade section -->
+    <!-- Introduce village section -->
     <section id="intro" class="w-full my-24">
       <BaseSection>
         <LandingBuyTradeImage class="sm:hidden mb-8" />
         <div data-aos="fade-right" class="col-span-12 lg:col-span-6 mt-4 xl:mt-20 space-y-6 px-4">
           <h2 class="text-4xl font-semibold sm:pr-8 xl:pr-12">
-            Introduction <br class="hidden sm:block" />
-            to Mary's Missionaries
+            Meet the<br class="hidden sm:block" />
+            People of Habte
           </h2>
           <p class="paragraph">
             Mary’s Missionaries began when hungry migrants fought over bread. After attempting to hand out bread to hungry migrants and needing rescue
@@ -129,75 +129,6 @@ export default {
       </BaseSection>
     </section>
 
-    <!-- Partners section -->
-    <section class="bg-partner relative max-w-full sm:mx-6 my-24 shadow sm:rounded-2xl overflow-hidden">
-      <div class="w-full px-6 sm:px-0 py-16 flex flex-col items-center justify-center space-y-4 text-center">
-        <h3 data-aos="flip-down" class="text-2xl text-neutral-800 font-semibold">Trusted Partners Worldwide</h3>
-        <p data-aos="flip-down" class="paragraph">We're partners with countless major organisations around the globe</p>
-        <div data-aos="fade-up" class="flex flex-wrap items-center justify-center">
-          <LandingPartnerImage v-for="img in ['clever.png', 'diamon-cutts.png', 'swiss-finance.png', 'gambio.png']" :key="img" :img="img" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Credit card section -->
-    <section class="w-full my-36">
-      <BaseSection data-aos="fade-down">
-        <div class="col-span-12 lg:col-span-7">
-          <div class="w-full">
-            <img :src="'/img/nefa-cc.webp'" class="w-[95%]" alt="" />
-          </div>
-        </div>
-        <div class="col-span-12 lg:col-span-5 space-y-6 px-4 sm:px-6 mt-20">
-          <h2 class="text-4xl font-semibold">Introducing the <span class="text-header-gradient">NEFA</span> Credit Card</h2>
-          <p class="paragraph">Subject to cardholder and rewards terms which will be available at application.</p>
-          <ul class="space-y-4 sm:space-y-2">
-            <LandingListItem title="Up to 3% back on purchases" />
-            <LandingListItem title="Earn rewards in bitcoin or any crypto on NEFA" />
-            <LandingListItem title="No annual fee" />
-          </ul>
-          <BaseButton class="w-full sm:max-w-[240px] px-10 py-4 bg-inherit text-gradient border border-[#0c66ee] text-base"
-            >Join the waitlist</BaseButton
-          >
-        </div>
-      </BaseSection>
-    </section>
-
-    <!-- Advanced trading tools section -->
-    <section class="bg-trading-tools relative max-w-full sm:mx-4 my-20 py-16 shadow rounded-2xl overflow-hidden">
-      <div class="relative max-w-screen-xl px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
-        <LandingTradingToolImage class="sm:hidden" />
-        <div data-aos="fade-right" class="col-span-12 lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8">
-          <h2 class="text-4xl font-semibold">Advanced Trading <span class="text-header-gradient">Tools</span></h2>
-          <div class="space-y-2">
-            <h4 class="text-lg font-medium">Professional Access, Non-stop Availability</h4>
-            <p class="paragraph text-sm xl:text-base">
-              We provide premium access to crypto trading for both individuals and institutions through high liquidity, reliable order execution and
-              constant uptime.
-            </p>
-          </div>
-          <div class="space-y-2">
-            <h4 class="text-lg font-medium">A Range of Powerful Apis</h4>
-            <p class="paragraph text-sm xl:text-base">
-              Set up your own trading interface or deploy your algorithmic strategy with our high-performance FIX and HTTP APIs. Connect to our
-              WebSocket for real-time data streaming.
-            </p>
-          </div>
-          <div class="space-y-2">
-            <h4 class="text-lg font-medium">Customer Support</h4>
-            <p class="paragraph text-sm xl:text-base">
-              Premium 24/7 support available to all customers worldwide by phone or email. Dedicated account managers for partners.
-            </p>
-          </div>
-          <div class="flex flex-col sm:flex-row">
-            <BaseButton class="px-10 py-4 bg-inherit text-gradient border border-[#4A8FF6] text-base"> Get Started </BaseButton>
-            <BaseButton class="bg-inherit text-[#4A8FF6] px-10 py-4 text-center underline rounded-full"> Learn More </BaseButton>
-          </div>
-        </div>
-        <LandingTradingToolImage data-aos="fade-left" class="hidden sm:block" />
-      </div>
-    </section>
-
     <!-- Industry-leading security section -->
     <section class="w-full my-24">
       <div class="relative max-w-screen-xl px-8 mx-auto grid grid-cols-12 gap-x-6">
@@ -207,7 +138,7 @@ export default {
           </div>
         </div>
         <div data-aos="fade-left" class="col-span-12 lg:col-span-5 space-y-8 sm:space-y-6 mt-8 xl:px-8">
-          <h2 class="text-4xl font-semibold">Industry-leading security from day one</h2>
+          <h2 class="text-4xl font-semibold">Impact</h2>
           <ul class="space-y-8 sm:space-y-4">
             <LandingListItem title="Safety, security and compliance">
               <p class="text-sm text-gray-700 leading-relaxed">
@@ -230,52 +161,10 @@ export default {
       </div>
     </section>
 
-    <!-- Getting started section -->
-    <section class="bg-trading-tools relative max-w-full sm:mx-4 xl:mx-10 my-24 shadow sm:rounded-2xl overflow-hidden">
-      <div class="w-full py-16 flex flex-col items-center">
-        <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center">Get started in just a few minutes</h2>
-        <div
-          data-aos="fade-up"
-          class="relative w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8"
-        >
-          <LandingStep v-for="step in steps" :key="step.title" :step="step" />
-          <img
-            src="/img/getting-started/arrow.png"
-            class="hidden lg:inline-block absolute top-32 left-64 xl:left-[22rem] w-24 xl:w-[9.5rem]"
-            alt=""
-          />
-          <img
-            src="/img/getting-started/arrow.png"
-            class="hidden lg:inline-block absolute top-32 right-64 xl:right-[22rem] w-24 xl:w-[9.5rem]"
-            alt=""
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ section -->
-    <section class="w-full my-24">
-      <BaseSection>
-        <div data-aos="fade-right" data-aos-delay="150" class="col-span-12 lg:col-span-6">
-          <div class="w-full">
-            <img src="/img/faq.webp" class="w-full" alt="" />
-          </div>
-        </div>
-        <div data-aos="fade-left" data-aos-delay="150" class="col-span-12 lg:col-span-6 px-4 sm:px-6 mt-8">
-          <span class="text-base text-gradient font-semibold uppercase mb-4 sm:mb-2">Support</span>
-          <h2 class="text-3xl sm:text-4xl font-semibold mb-10 sm:mb-6">Frequently asked questions</h2>
-
-          <ul class="shadow-box">
-            <BaseAccordion v-for="(accordion, index) in accordions" :key="index" :accordion="accordion" />
-          </ul>
-        </div>
-      </BaseSection>
-    </section>
-
-    <!-- Testimony -->
+    <!-- Testimony section -->
     <section id="testimony" class="bg-trading-tools relative max-w-full sm:mx-4 xl:mx-10 my-24 overflow-hidden">
       <div class="w-full py-16 flex flex-col items-center">
-        <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center">What People Say</h2>
+        <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center">Testimonials</h2>
         <div
           data-aos="fade-up"
           class="relative w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8"
@@ -283,6 +172,96 @@ export default {
           <BaseSwiper />
         </div>
       </div>
+    </section>
+
+    <!-- Future goals section -->
+    <section class="bg-trading-tools relative max-w-full sm:mx-4 my-20 py-16 shadow rounded-2xl overflow-hidden">
+      <div class="relative max-w-screen-xl px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
+        <LandingTradingToolImage class="sm:hidden" />
+        <div data-aos="fade-right" class="col-span-12 lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8">
+          <h2 class="text-4xl font-semibold">Future Plans For Our <span class="text-header-gradient">Villages</span></h2>
+          <div class="space-y-2">
+            <h4 class="text-lg font-medium">Water</h4>
+            <p class="paragraph text-sm xl:text-base">
+              We provide premium access to crypto trading for both individuals and institutions through high liquidity, reliable order execution and
+              constant uptime.
+            </p>
+          </div>
+          <div class="space-y-2">
+            <h4 class="text-lg font-medium">Schools</h4>
+            <p class="paragraph text-sm xl:text-base">
+              Set up your own trading interface or deploy your algorithmic strategy with our high-performance FIX and HTTP APIs. Connect to our
+              WebSocket for real-time data streaming.
+            </p>
+          </div>
+          <div class="space-y-2">
+            <h4 class="text-lg font-medium">Housing</h4>
+            <p class="paragraph text-sm xl:text-base">
+              Premium 24/7 support available to all customers worldwide by phone or email. Dedicated account managers for partners.
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-right" class="col-span-12 lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8">
+          <h2 class="text-4xl text-white text-opacity-100">Header</h2>
+          <div class="space-y-2">
+            <h4 class="text-lg font-medium">Stoves</h4>
+            <p class="paragraph text-sm xl:text-base">
+              We provide premium access to crypto trading for both individuals and institutions through high liquidity, reliable order execution and
+              constant uptime.
+            </p>
+          </div>
+          <div class="space-y-2">
+            <h4 class="text-lg font-medium">Medical</h4>
+            <p class="paragraph text-sm xl:text-base">
+              Set up your own trading interface or deploy your algorithmic strategy with our high-performance FIX and HTTP APIs. Connect to our
+              WebSocket for real-time data streaming.
+            </p>
+          </div>
+          <div class="space-y-2">
+            <h4 class="text-lg font-medium">Housing</h4>
+            <p class="paragraph text-sm xl:text-base">
+              Premium 24/7 support available to all customers worldwide by phone or email. Dedicated account managers for partners.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Campaign section -->
+    <section class="w-full my-36">
+      <BaseSection data-aos="fade-down">
+        <div class="col-span-12 lg:col-span-7">
+          <div class="w-full">
+            <img :src="'/img/nefa-cc.webp'" class="w-[95%]" alt="" />
+          </div>
+        </div>
+        <div class="col-span-12 lg:col-span-5 space-y-6 px-4 sm:px-6 mt-20">
+          <h2 class="text-4xl font-semibold">Want your own project or village? Start a <span class="text-header-gradient">campaign</span>.</h2>
+          <p class="paragraph">Click the button below to get to the village application.</p>
+          <BaseButton class="w-full sm:max-w-[240px] px-10 py-4 bg-inherit text-gradient border border-[#50855D] text-base"
+            >Create campaign</BaseButton
+          >
+        </div>
+      </BaseSection>
+    </section>
+
+    <!-- FAQ section -->
+    <section class="w-full my-24">
+      <BaseSection>
+        <div data-aos="fade-right" data-aos-delay="150" class="col-span-12 lg:col-span-6 px-4 sm:px-6 mt-8">
+          <span class="text-base text-gradient font-semibold uppercase mb-4 sm:mb-2">Support</span>
+          <h2 class="text-3xl sm:text-4xl font-semibold mb-10 sm:mb-6">Frequently asked questions</h2>
+
+          <ul class="shadow-box">
+            <BaseAccordion v-for="(accordion, index) in accordions" :key="index" :accordion="accordion" />
+          </ul>
+        </div>
+        <div data-aos="fade-left" data-aos-delay="150" class="col-span-12 lg:col-span-6">
+          <div class="w-full">
+            <img src="/img/faq.webp" class="w-full" alt="" />
+          </div>
+        </div>
+      </BaseSection>
     </section>
 
     <!-- Back To Top -->
@@ -303,7 +282,7 @@ export default {
 <style scoped>
 .text-header-gradient {
   background: rgb(57, 132, 244);
-  background: linear-gradient(169.4deg, #3984f4 -6.01%, #0cd3ff 36.87%, #2f7cf0 78.04%, #0e65e8 103.77%);
+  background: linear-gradient(169.4deg, #396242 -6.01%, #68A977 36.87%, #396242 78.04%, #396242 103.77%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }

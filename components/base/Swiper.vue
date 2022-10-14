@@ -4,8 +4,8 @@
     :loop="true"
     :loopFillGroupWithBlank="true"
     :modules="modules"
-    :slides-per-view="1"
-    :space-between="50"
+    :slides-per-view="3"
+    :space-between="0"
     navigation
     :pagination="{ clickable: true }"
     @swiper="onSwiper"
@@ -73,7 +73,7 @@ export default {
 
 <style>
 :root {
-  --swiper-pagination-color: rgb(12 102 238 / var(--tw-border-opacity));
+  --swiper-pagination-color: rgb(80, 133, 93);
 }
 
 .swiper {
