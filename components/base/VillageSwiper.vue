@@ -4,7 +4,7 @@
     :loop="true"
     :loopFillGroupWithBlank="true"
     :modules="modules"
-    :slides-per-view="3"
+    :slides-per-view="2"
     :space-between="0"
     navigation
     :pagination="{ clickable: true }"

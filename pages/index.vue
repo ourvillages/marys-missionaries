@@ -137,7 +137,7 @@ export default {
           data-aos="fade-up"
           class="relative w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8"
         >
-          <VillageSwiper />
+          <BaseVillageSwiper />
         </div>
       </div>
     </section>

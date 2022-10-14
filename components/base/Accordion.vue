@@ -19,19 +19,16 @@
     </transition>
   </li>
 </template>
-<script lang="ts">
-export default {
-  name: 'BaseAccordion',
-  props: {
-    accordion: {
-      type: Object,
-      required: true,
-    },
+
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const { accordion } = defineProps({
+  accordion: {
+    type: Object,
+    required: true,
   },
-  data() {
-    return {
-      selected: false,
-    }
-  },
-}
+})
+
+const selected = ref(false)
 </script>

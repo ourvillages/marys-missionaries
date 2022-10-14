@@ -26,7 +26,7 @@
           :class="[open ? 'flex' : 'hidden lg:flex']"
           class="w-full h-auto flex flex-col flex-grow lg:items-center pb-4 lg:pb-0 lg:justify-end lg:flex-row origin-top duration-300 xl:space-x-2 space-y-3 lg:space-y-0"
         >
-          <BaseNavLink name="Villages" url="/infoVillage" />
+          <BaseNavLink name="Villages" url="/info-village" />
           <BaseNavLink name="Connect" url="/blog" />
           <BaseNavLink name="About" url="/about" />
           <BaseNavLink name="Donate" url="#testimony" />
