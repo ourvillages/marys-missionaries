@@ -15,16 +15,20 @@ const validationSchema = toFormValidator(
   })
 )
 
-const { handleSubmit, errors, useFieldModel } = useForm({
+const { handleSubmit, errors, useFieldModel, setErrors } = useForm({
   validationSchema: validationSchema,
 })
 
 const onSubmit = handleSubmit(async (values) => {
   try {
-    console.log(values)
     await login({ email: values.email, password: values.password })
     router.replace('/main-village')
-  } catch (e) {}
+  } catch (e: any) {
+    setErrors({
+      password: e?.data || 'User credentials are incorrect.',
+      email: e?.data || 'User credentials are incorrect.',
+    })
+  }
 })
 
 const [email, password] = useFieldModel(['email', 'password'])
