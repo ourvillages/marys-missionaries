@@ -122,11 +122,24 @@ export default {
             from the local shopkeepers from the ensuing melee, our first missionary realized that she needed to change her strategy...
           </p>
           <div class="space-y-6 lg:pr-12">
-            <BaseButton class="w-full px-5 py-4 bg-blue-gradient text-white text-base font-medium">Learn More </BaseButton>
+            <BaseButton class="w-full px-5 py-4 bg-blue-gradient text-white text-base font-medium">Learn More About Each Village</BaseButton>
           </div>
         </div>
         <LandingBuyTradeImage data-aos="fade-left" class="hidden sm:block" />
       </BaseSection>
+    </section>
+
+    <!-- Testimony section -->
+    <section id="testimony" class="bg-trading-tools relative max-w-full sm:mx-4 xl:mx-10 my-24 overflow-hidden">
+      <div class="w-full py-16 flex flex-col items-center">
+        <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center">Testimonials</h2>
+        <div
+          data-aos="fade-up"
+          class="relative w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8"
+        >
+          <VillageSwiper />
+        </div>
+      </div>
     </section>
 
     <!-- Industry-leading security section -->

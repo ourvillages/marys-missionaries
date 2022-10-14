@@ -26,55 +26,10 @@
           :class="[open ? 'flex' : 'hidden lg:flex']"
           class="w-full h-auto flex flex-col flex-grow lg:items-center pb-4 lg:pb-0 lg:justify-end lg:flex-row origin-top duration-300 xl:space-x-2 space-y-3 lg:space-y-0"
         >
-          <NavLink name="Introduction" url="#intro" />
-          <NavLink name="Blog" url="/blog" />
-          <NavLink name="Villages" url="#" />
-          <NavLink name="Testimony" url="#testimony" />
-          <li class="relative group">
-            <button
-              class="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline flex items-center"
-              @click="dropdownNavbar = !dropdownNavbar"
-            >
-              <span>Products</span>
-              <Icon name="mdi:chevron-up" v-if="dropdownNavbar" size="20" />
-              <Icon name="mdi:chevron-down" v-else size="20" />
-            </button>
-            <transition name="transform-fade-down">
-              <ul
-                v-if="dropdownNavbar"
-                class="flex lg:absolute flex-col max-w-42 py-1 lg:bg-white rounded-md lg:shadow-md pl-2 lg:pl-0"
-              >
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100"
-                    >Exchange</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100"
-                    >Wallet</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100"
-                    >Explorer</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100"
-                    >Charts</a
-                  >
-                </li>
-              </ul>
-            </transition>
-          </li>
+          <BaseNavLink name="Villages" url="/infoVillage" />
+          <BaseNavLink name="Connect" url="/blog" />
+          <BaseNavLink name="About" url="/about" />
+          <BaseNavLink name="Donate" url="#testimony" />
         </ul>
       </div>
       <div :class="[open ? 'flex' : 'hidden lg:flex']" class="space-x-3">

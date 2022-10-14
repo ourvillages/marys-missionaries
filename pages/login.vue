@@ -2,7 +2,7 @@
 import { toFormValidator } from '@vee-validate/zod'
 import { useForm } from 'vee-validate'
 import * as zod from 'zod'
-
+const router = useRouter()
 const { login } = useDirectusAuth()
 
 const validationSchema = toFormValidator(
@@ -23,6 +23,7 @@ const onSubmit = handleSubmit(async (values) => {
   try {
     console.log(values)
     await login({ email: values.email, password: values.password })
+    router.replace('/main-village')
   } catch (e) {}
 })
 
