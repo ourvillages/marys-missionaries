@@ -1,14 +1,3 @@
-<script scoped lang="ts">
-export default {
-  name: 'BaseFooter',
-  data() {
-    return {
-      year: new Date().getFullYear(),
-    }
-  },
-}
-</script>
-
 <template>
   <footer class="max-w-screen-xl px-8 mx-auto">
     <div class="w-full border-y border-[#DDDDDD]">
@@ -110,7 +99,8 @@ export default {
     <div
       class="py-8 sm:py-4 text-center text-sm text-[#666666] hover:text-gray-900"
     >
-      &copy; Copyright {{ year }} Mary’s Missionaries Inc. All rights reserved
+      &copy; Copyright {{ new Date().getFullYear() }} Mary’s Missionaries Inc.
+      All rights reserved
     </div>
   </footer>
 </template>

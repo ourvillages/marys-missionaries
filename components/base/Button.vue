@@ -6,9 +6,9 @@
     <slot></slot>
   </button>
 </template>
-<script lang="ts">
-export default {
-  name: 'BaseButton',
+<script setup lang="ts">
+defineComponent({
   inheritAttrs: false,
-}
+  name: 'BaseButton',
+})
 </script>

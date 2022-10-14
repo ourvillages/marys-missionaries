@@ -21,7 +21,6 @@
 </template>
 
 <script setup lang="ts">
-
 const { accordion } = defineProps({
   accordion: {
     type: Object,

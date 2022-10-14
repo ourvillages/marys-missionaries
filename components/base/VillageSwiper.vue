@@ -30,7 +30,7 @@
   </swiper>
 </template>
 
-<script scoped lang="ts">
+<script setup lang="ts">
 // Import Swiper Vue.js components
 import { Navigation, Pagination, A11y } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/vue'
@@ -41,35 +41,19 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
-export default {
-  name: 'VillageSwiper',
-  components: {
-    Swiper,
-    SwiperSlide,
-  },
-  data() {
-    return {
-      items: [
-        { name: 'Danielle', title: 'Frontend Developer' },
-        { name: 'Evelyn', title: 'Project Manager' },
-        { name: 'Marrianne', title: "Founder of Mary's Marrianne" },
-      ],
-    }
-  },
-  setup() {
-    const onSwiper = (swiper: SwiperClass) => {
-      console.log(swiper)
-    }
-    const onSlideChange = () => {
-      console.log('slide change')
-    }
-    return {
-      onSwiper,
-      onSlideChange,
-      modules: [Navigation, Pagination, A11y],
-    }
-  },
+const onSwiper = (swiper: SwiperClass) => {
+  console.log(swiper)
 }
+const onSlideChange = () => {
+  console.log('slide change')
+}
+
+const items = [
+  { name: 'Danielle', title: 'Frontend Developer' },
+  { name: 'Evelyn', title: 'Project Manager' },
+  { name: 'Marrianne', title: "Founder of Mary's Marrianne" },
+]
+const modules = [Navigation, Pagination, A11y]
 </script>
 
 <style>

@@ -2,22 +2,21 @@
   <li class="w-full">
     <NuxtLink
       class="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline"
-      :to="url">
+      :to="url"
+    >
       {{ name }}
     </NuxtLink>
   </li>
 </template>
-<script lang="ts">
-export default {
-  props: {
-    name: {
-      type: String,
-      required: true,
-    },
-    url: {
-      type: String,
-      required: true,
-    },
+<script setup lang="ts">
+defineProps({
+  name: {
+    type: String,
+    required: true,
   },
-}
+  url: {
+    type: String,
+    required: true,
+  },
+})
 </script>

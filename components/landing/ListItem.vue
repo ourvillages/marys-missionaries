@@ -7,14 +7,12 @@
     <slot></slot>
   </li>
 </template>
-<script lang="ts">
-export default {
-  name: 'LandingListItem',
-  props: {
-    title: {
-      type: String,
-      default: '',
-    },
+
+<script setup lang="ts">
+defineProps({
+  title: {
+    type: String,
+    default: '',
   },
-}
+})
 </script>

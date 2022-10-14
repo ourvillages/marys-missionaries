@@ -49,14 +49,6 @@
     </div>
   </nav>
 </template>
-<script lang="ts">
-export default {
-  name: 'BaseNavbar',
-  data() {
-    return {
-      open: false,
-      dropdownNavbar: false,
-    }
-  },
-}
+<script setup lang="ts">
+const open = ref(false)
 </script>
