@@ -1,3 +1,17 @@
+<script setup lang="ts">
+type DirectusCustomUser = {
+  first_name: string
+  last_name: string
+  email: string
+}
+const user = useDirectusUser() as unknown as DirectusCustomUser
+
+const { logout } = useDirectusAuth()
+
+const open = ref(false)
+const dropdownAvatar = ref(false)
+</script>
+
 <template>
   <nav id="navbar" class="relative z-10 w-full text-neutral-800">
     <div
@@ -32,23 +46,78 @@
           <BaseNavLink name="Donate" url="#testimony" />
         </ul>
       </div>
-      <div :class="[open ? 'flex' : 'hidden lg:flex']" class="space-x-3">
-        <NuxtLink to="/login">
+      <template v-if="!user">
+        <div :class="[open ? 'flex' : 'hidden lg:flex']" class="space-x-3">
+          <NuxtLink to="/login">
+            <base-button
+              class="px-8 xl:px-10 py-3 mt-2 bg-inherit text-gradient border border-[#396242]"
+            >
+              Login
+            </base-button>
+          </NuxtLink>
+
           <base-button
-            class="px-8 xl:px-10 py-3 mt-2 bg-inherit text-gradient border border-[#396242]"
+            class="px-8 xl:px-10 py-3 mt-2 bg-gradient-to-r from-[#50855D] to-[#396242] text-white"
           >
-            Login
+            Sign Up
           </base-button>
-        </NuxtLink>
-        <base-button
-          class="px-8 xl:px-10 py-3 mt-2 bg-gradient-to-r from-[#50855D] to-[#396242] text-white"
-        >
-          Sign Up
-        </base-button>
-      </div>
+        </div>
+      </template>
+
+      <template v-else>
+        <div class="relative">
+          <button
+            id="dropdownUserAvatarButton"
+            class="relative flex h-10 w-10 shrink-0 select-none items-center justify-center rounded bg-gray-100 text-sm font-bold uppercase text-gray-800"
+            type="button"
+            @click="dropdownAvatar = !dropdownAvatar"
+          >
+            <img
+              class="h-full w-full rounded object-cover object-center"
+              src="https://source.boringavatars.com/beam/3?square"
+            />
+          </button>
+
+          <!-- Dropdown menu -->
+          <div
+            id="dropdownAvatar"
+            :class="[dropdownAvatar ? 'flex' : 'hidden']"
+            class="absolute flex flex-col top-full mt-2 right-0 z-10 w-56 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"
+          >
+            <div class="py-3 px-4 text-sm text-gray-900 dark:text-white">
+              <div>
+                {{ user.first_name }}
+                {{ user.last_name }}
+              </div>
+              <div class="font-medium truncate">
+                {{ user.email }}
+              </div>
+            </div>
+            <ul
+              class="py-1 text-sm text-gray-700 dark:text-gray-200"
+              aria-labelledby="dropdownUserAvatarButton"
+            >
+              <li>
+                <NuxtLink to="/main-village">
+                  <a
+                    href="#"
+                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Dashboard</a
+                  >
+                </NuxtLink>
+              </li>
+            </ul>
+            <div class="py-1">
+              <a
+                href="#"
+                @click="logout"
+                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                >Sign out</a
+              >
+            </div>
+          </div>
+        </div>
+      </template>
     </div>
   </nav>
 </template>
-<script setup lang="ts">
-const open = ref(false)
-</script>
