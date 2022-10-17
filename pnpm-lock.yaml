@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@headlessui/vue': ^1.7.3
   '@nuxtjs/tailwindcss': ^5.3.3
   '@tailwindcss/aspect-ratio': ^0.4.2
   '@tailwindcss/forms': ^0.5.3
@@ -17,6 +18,7 @@ specifiers:
   zod: 3.19.0-beta.0
 
 dependencies:
+  '@headlessui/vue': 1.7.3
   '@tailwindcss/aspect-ratio': 0.4.2
   '@tailwindcss/forms': 0.5.3
   '@vee-validate/zod': 4.6.10_ihb5zeh2ihycfgheyh6eoyf3ry
@@ -360,6 +362,13 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@headlessui/vue/1.7.3:
+    resolution: {integrity: sha512-Is4iakKts9u9E0+jEZNzoJpBjwq2SamwEIoEl2RlyYSu6Zco536GsPXaQEfg/o7Eyc1GUUlcL+dJd4Rt7qyf7A==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      vue: ^3.2.0
+    dev: false
 
   /@hutson/parse-repository-url/3.0.2:
     resolution: {integrity: sha512-H9XAx3hc0BQHY6l+IFSWHDySypcXsvsuLhgYLUGywmJ5pswRVQJUHpOsobnLYp2ZUaUlKiKDrgWWhosOwAEM8Q==}
