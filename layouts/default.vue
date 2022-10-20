@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen font-sans antialiased relative">
     <div class="relative">
-      <div class="-z-10 absolute top-0 left-0 w-full h-[75vh] sm:h-[225vh] lg:h-[75vh] cover-gradient-2 sm:cover-gradient"></div>
+      <div class="-z-10 absolute top-0 left-0 w-full h-full bg-light-green sm:cover-gradient"></div>
       <BaseNavbar />
 
       <main class="text-neutral-800">
@@ -20,6 +20,9 @@ export default {
 </script>
 
 <style>
+.bg-light-green {
+  background-color: #E5F5E9
+}
 .cover-gradient {
   background: linear-gradient(
     169.4deg,
