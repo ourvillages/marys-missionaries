@@ -2,6 +2,11 @@
 import { toFormValidator } from '@vee-validate/zod'
 import { useForm } from 'vee-validate'
 import * as zod from 'zod'
+
+definePageMeta({
+  middleware: ['auth-logged-in'],
+})
+
 const router = useRouter()
 const { login } = useDirectusAuth()
 
